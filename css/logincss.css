@@ -1,0 +1,44 @@
+form {
+    font-size: 20px;
+}
+legend {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.mb-1 > a {
+    text-decoration: underline!important;
+}
+
+#enfeite {
+    height:100px;
+    width: 100px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+#enfeite > p {
+    padding-top: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.facebookgoogle {
+    height: 35px;
+}
+fieldset {
+    padding: 0 15px 15px 15px!important;
+    border: 1px solid black!important;
+    border-radius: 5px!important;
+}
+.col-sm-3{
+    display:flex;
+    justify-content: center;
+}

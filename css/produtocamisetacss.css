@@ -1,0 +1,61 @@
+main img {
+    height: 300px;
+    border-radius: 5px;
+}
+
+#informações > h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#informações > span:not(.avaliacao), figcaption {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#tamanhos {
+    display: flex;
+}
+
+#tamanhos > div {
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 3px;
+    margin:5px;
+    text-align:center;
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 600;
+    background-color: white;
+}
+
+#tamanhos >div:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.table{
+    width:300px!important;
+}
+td,tr,th {
+    border:1px solid black!important;
+}
+
+.carousel-inner{
+    width:300px!important;
+}
+
+[class^="carousel-control"]{
+    top:40%!important;
+    height:60px;
+}
+
+[class^="carousel-control"]:hover {
+    background-color:rgb(226, 226, 226);
+}
+.row{
+    width: 80%;
+}
+nav{
+    z-index:1!important;
+}

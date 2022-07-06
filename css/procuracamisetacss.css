@@ -1,0 +1,55 @@
+.produtos {
+    align-items: center;
+}
+
+a:hover > .produtos {
+    box-shadow: 0px 0px 5px gray;
+    background-color: rgb(228, 212, 188);
+}
+
+a:hover > .produtos > .imagem {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.nome, .custo {
+    font-weight: 600;
+    color: black;
+}
+
+.nome {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.custo {
+    font-size: 19px;
+}
+
+#ad {
+    height: 100px;
+    width: 93%;
+    padding: 0 20% 0 20%;
+    background-image: url(../imagens/ad.jpg);
+}
+
+#ad > div {
+    text-align: center;
+}
+
+#ad > div > span {
+    padding-top: 17px;
+    color: azure;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#ad:hover > div > span {
+    text-decoration: underline;
+}
+
+#ad:hover {
+    height: 105px;
+    box-shadow: -3px 3px 3px grey;
+
+}

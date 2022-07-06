@@ -1,0 +1,27 @@
+input{
+    width: 200px!important;
+}
+
+.data{
+    width: 50px!important;
+    border: 1px solid black;
+}
+
+#formadepagamento{
+    width:100px;
+}
+
+.row{
+    width:70%
+}
+
+.form-control, .form-select{
+    border: 1px solid black!important;
+}
+.form-label{
+    font-size: 20px;
+}
+
+.container > h1{
+    margin-left: 5px;
+}

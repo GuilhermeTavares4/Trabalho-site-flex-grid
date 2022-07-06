@@ -1,0 +1,39 @@
+#ofertas > a {
+    margin: 25px 15px 10px 15px;
+}
+
+.produtos {
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+a:hover > .produtos {
+    box-shadow: 0px 0px 5px gray;
+    background-color: rgb(228, 212, 188);
+}
+
+a:hover > .produtos > .imagem {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.nome {
+    padding-top: 5px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.antigo {
+    padding-top: 3px;
+    font-size: 26px;
+    text-decoration-line: line-through;
+    color: rgb(0, 0, 0, 0.75);
+}
+
+.atual {
+    font-size: 27px;
+    font-weight: 600;
+}
