@@ -2,32 +2,62 @@
 .compras{
     height: 70px;
     width: 270px;
-    padding: 10px;
+    font-size: 1.7rem;
     border: 1px solid black;
-    margin: 20px 0 10px 0;
+    margin-top: 25px;
     text-align:center;
-    line-height: 64px;
+    line-height: 70px;
     background-color: white;
 }
-
-
-
 label, .preco {
     font-size: 20px;
     font-weight: bold;
 }
-
-.row{
-    width: 85%;
-}
-
 input{
-    width: 35%!important;
-    border: 1px solid black!important;
+    width: 42%;
+    border: 1px solid gray;
+    border-radius: 3px;
 }
-#pc{
-    line-height:50px!important;
+.container{
+    gap:20px;
+    text-align:center;
+    justify-items:center;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 15px;
+    grid-template-areas:
+    "titulo"
+    "comprasgrid"
+    "outraspartes"
 }
-.container > h1{
-    margin-left: 5px;
+.outraspartes{
+    grid-area:outraspartes;
+}
+.comprasgrid{
+    grid-area:comprasgrid;
+}
+.titulo{
+    grid-area:titulo;
+}
+.botao{
+    background-color:lightslategray;
+    color:white;
+    
+    padding:8px;
+    border-radius:4px;
+}
+
+@media (min-width: 700px){
+    .container{
+        justify-items:start;
+        text-align:start;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-areas:
+        "titulo titulo"
+        "comprasgrid outraspartes"
+    }
+    .outraspartes{
+        margin-top:18px;
+    }
 }
