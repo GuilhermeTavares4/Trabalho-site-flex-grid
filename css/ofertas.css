@@ -1,23 +1,46 @@
-#ofertas > a {
-    margin: 25px 15px 10px 15px;
+#ofertas {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+}
+
+@media screen and (max-width: 750px) {
+    #ofertas {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);    
+    }
 }
 
 .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 10px 10px 10px 10px;
+    margin: 1rem;
+    padding: 0.625rem;
+    transition: 0.1s;
 }
 
-a:hover > .produtos {
+.produtos:hover {
     box-shadow: 0px 0px 5px gray;
     background-color: rgb(228, 212, 188);
+    transform: translateY(10px);
 }
 
-a:hover > .produtos > .imagem {
+.produtos img {
+    transition: 0.1s;
+}
+
+.produtos:hover img {
     box-shadow: 0px 0px 5px gray;
 }
 
 .descricao {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     text-align: center;
+    padding: 0 1.5rem;
 }
 
 .nome {
