@@ -1,20 +1,65 @@
+main{
+    padding-top:15px;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto auto auto auto;
+    justify-items:center;
+    gap:25px;
+    text-align:center;
+    grid-template-areas:
+    "imagem"
+    "informacoes"
+    "tabela"
+    "addcarrinho"
+}
+
+.titulo{
+    line-height:40px;
+    font-size:2.15rem;
+    font-weight:500;
+}
+
+.informacoes{
+    font-size:1.4rem;
+    grid-area:informacoes;
+}
+
+.imagem{
+    grid-area:imagem;
+}
+.tabela{
+    grid-area:tabela;
+}
+.addcarrinho{
+    grid-area:addcarrinho;
+}
+
+.botao{
+    padding:5px 10px;
+    background-color:lightslategray;
+    color:white;
+    border-radius: 5px;
+}
+
 main img {
     height: 300px;
     border-radius: 5px;
 }
 
-#informações > h1 {
-    font-size: 50px;
-    line-height: 50px;
+table,td,th{
+    width:250px;
+    padding: 6px;
+    border:1px solid black!important;
 }
-
-#informações > span:not(.avaliacao), figcaption {
-    font-size: 20px;
-    line-height: 40px;
-    font-weight: bold;
+th{
+    border-bottom:2px solid black!important;
+}
+tbody tr:nth-child(odd){
+    background-color:rgb(235, 221, 203)
 }
 
 #tamanhos {
+    justify-content:center;
     display: flex;
 }
 
@@ -34,28 +79,27 @@ main img {
     background-color: rgb(200, 200, 200);
 }
 
-.table{
-    width:300px!important;
-}
-td,tr,th {
-    border:1px solid black!important;
-}
-
-.carousel-inner{
-    width:300px!important;
-}
-
-[class^="carousel-control"]{
-    top:40%!important;
-    height:60px;
-}
-
-[class^="carousel-control"]:hover {
-    background-color:rgb(226, 226, 226);
-}
-.row{
-    width: 80%;
-}
-nav{
-    z-index:1!important;
+@media (min-width:700px){
+    main{
+        padding-top:45px;
+        text-align:start;
+        justify-items:start;
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "imagem informacoes"
+        ". tabela"
+        ". addcarrinho"
+        
+    }
+    #tamanhos{
+        justify-content:start;
+    }
+    .imagem{
+        justify-self:center;
+    }
+    .titulo{
+        line-height:40px;
+        font-size:3rem;
+    }
 }
