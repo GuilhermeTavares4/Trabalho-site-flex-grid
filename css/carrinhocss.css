@@ -14,18 +14,17 @@ label, .preco {
     font-weight: bold;
 }
 input{
-    width: 42%;
-    border: 1px solid gray;
-    border-radius: 3px;
+    width: 44%;
+    border: 1px solid black;
 }
-.container{
+main{
+    padding-top:15px;
     gap:20px;
     text-align:center;
     justify-items:center;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 15px;
     grid-template-areas:
     "titulo"
     "comprasgrid"
@@ -49,7 +48,8 @@ input{
 }
 
 @media (min-width: 700px){
-    .container{
+    main{
+        align-content:space-around;
         justify-items:start;
         text-align:start;
         grid-template-columns: 1fr 1.2fr;
