@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bola {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: blueviolet;
+    position: relative;
+    bottom: 0px;
+    animation: press 1s ease-in-out 0s infinite normal none, mov-down 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite normal none, mov-up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite normal none;
+}
+
+@keyframes mov-down {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: -50%;
+    }
+}
+
+@keyframes press {
+    35% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: translateY(25px) scaleY(0.5);
+    }
+
+    65% {
+        transform: translateY(0px) scaleY(1);
+    }
+}
+
+@keyframes mov-up {
+    60% {
+        bottom: -50%;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
