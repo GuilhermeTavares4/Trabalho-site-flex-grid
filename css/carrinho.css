@@ -14,6 +14,7 @@ label, .preco {
     font-weight: bold;
 }
 input{
+    height:22px;
     width: 44%;
     border: 1px solid black;
 }
@@ -41,8 +42,7 @@ main{
 }
 .botao{
     background-color:lightslategray;
-    color:white;
-    
+    color:white;  
     padding:8px;
     border-radius:4px;
 }
