@@ -44,10 +44,12 @@ b{
     text-decoration:underline;
 }
 .input{
+    height:35px;
     border:1px solid silver;
     border-radius:5px;
 }
 .botao{
+font-size:18px;
 line-height:40px;
 height:40px;
 padding:0 8px;
