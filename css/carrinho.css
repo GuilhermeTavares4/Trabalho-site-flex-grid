@@ -47,12 +47,12 @@ main{
     border-radius:4px;
 }
 
-@media (min-width: 700px){
+@media (min-width: 650px){
     main{
-        align-content:space-around;
+        align-content:center;
         justify-items:start;
         text-align:start;
-        grid-template-columns: 1fr 1.2fr;
+        grid-template-columns: 1.4fr 1fr;
         grid-template-areas:
         "titulo titulo"
         "comprasgrid outraspartes"
@@ -60,4 +60,9 @@ main{
     .outraspartes{
         margin-top:18px;
     }
+}
+@media (min-width:1050px){
+    main{
+    grid-template-columns: 1fr 1.2fr;
+}
 }
