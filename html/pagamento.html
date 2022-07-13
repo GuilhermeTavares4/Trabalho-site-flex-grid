@@ -63,65 +63,49 @@
     </nav>
 
     <main>
-        <div class="container">
+        <div class="titulo">
         <h1>Pagamento:</h1>
-        <form>
-            <div class="row p-2">
-                <div class="col-md-6">
-                <label for="formadepagamento" class="form-label">Forma de pagamento:</label><br>
+    </div>
+                  
+            <div class="infocartao">
+                <form> 
+                <label for="formadepagamento" >Forma de pagamento:</label><br>
 
-                <select id="formadepagamento" class="form-select" name="fpagamento">
+                <select id="formadepagamento"  name="fpagamento">
                     <option>Cartão</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <label for="datas" class="form-label">Data de validade:</label><br>
+                </select><br>
+          
+                <label for="ncartao" >Número do cartão:</label><br>
+                <input type="text"  id="ncartao"><br>
+
+                <label for="datas" >Data de validade:</label><br>
                 <input class="data" type="number" id="datas" placeholder=" --">
 
-                <input class="data" type="number" placeholder=" ----">
-            </div>
-            </div>
-            <div class="row p-2">
-                <div class="col-md-6">
-                <label for="ncartao" class="form-label">Número do cartão:</label>
-                <input type="text" class="form-control" id="ncartao">
-            </div>
-                <div class="col-md-6">
-                <label for="cds" class="form-label">Código de segurança:</label> 
+                <input class="data" type="number" placeholder=" ----"><br>
+             
+                <label for="cds" >Código de segurança:</label> <br>
 
-                <input type="text" class="form-control" id="cds"> 
+                <input type="text"  id="cds"> 
+                </form>
             </div>
-            </div>
-            <div class="row p-2">
-                <div class="col-md-6">
-                <label for="nome" class="form-label">Nome completo:</label>
+              
+           <div class="infopessoa">
+            <form>
+                <label for="nome" >Nome completo:</label><br>
 
-                <input type="text" class="form-control" id="nome">
-            </div>
-            <div class="col-md-6">
-                <label for="CPF" class="form-label">CPF:</label><br>
-                <input type="text" class="form-control" id="CPF">
-            </div>
-            </div>
-            <div class="row p-2">
-                <div class="col-md-6">
-                <label for="endereco" class="form-label">Endereço de entrega:</label>
+                <input type="text"  id="nome"><br>
+     
+       
+                <label for="CPF" >CPF:</label><br>
+                <input type="text"  id="CPF"><br>
+                 
+                <label for="endereco" >Endereço de entrega:</label><br>
 
-                <input type="text" class="form-control" id="endereco">
-            </div>
-            <div class="col-md-6 align-self-end">
-                <h5>Total: R$XX,XX</h5>
-            </div>
-            </div>
-            <div class="row p-2">
-                <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
-                <input type="submit" class="btn btn-secondary" value="Confirmar a compra">
-            </div>
-            </div>
-        </form>
-    </div>
+                <input type="text"  id="endereco"><br><br>
+            </form>
+            <span>Total: R$XX,XX</span><br><br>
+            <input type="submit" class="botao" value="Confirmar a compra">
+        </div>
     </main>
     
     <footer class="d-flex flex-wrap justify-content-around">
