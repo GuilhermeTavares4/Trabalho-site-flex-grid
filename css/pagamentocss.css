@@ -1,27 +1,71 @@
-input{
-    width: 200px!important;
-}
-
 .data{
-    width: 50px!important;
-    border: 1px solid black;
+    width: 50px;
+    border: 1px solid silver;
+}
+main{
+    text-align:center;
+    gap:10px;
+    line-height:35px;
+    padding-top:10px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    align-content:space-between;
+    justify-items:center;
+    grid-template-areas:
+    "titulo"
+    "infocartao"
+    "infopessoa"
+
+}
+.infopessoa{
+    grid-area:infopessoa;
+}
+.infocartao{
+    grid-area:infocartao;
+}
+.titulo{
+    grid-area:titulo;
+}
+.confirmarcompra{
+    grid-area:confirmarcompra;
+}
+label{
+    font-size:1.4rem;
+}
+input{
+    border-radius:5px;
+    border: 1px solid silver;
+}
+select{
+    padding: 5px 8px;
+    border-radius:5px;
+    border: 1px solid silver;
 }
 
-#formadepagamento{
-    width:100px;
+.botao{
+    padding:0 8px;
+    background-color:lightslategray;
+    color:white;
+    border-radius: 5px;
+}
+span{
+    font-size: 1.2rem;
 }
 
-.row{
-    width:70%
+@media (min-width:750px) {
+    main{
+        line-height:37px;
+        padding-left:8%;
+        text-align:start;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-rows: auto auto;
+        align-content:space-around;
+        justify-items:start;
+        grid-template-areas:
+        "titulo titulo"
+        "infocartao infopessoa"
+    }
 }
 
-.form-control, .form-select{
-    border: 1px solid black!important;
-}
-.form-label{
-    font-size: 20px;
-}
 
-.container > h1{
-    margin-left: 5px;
-}
