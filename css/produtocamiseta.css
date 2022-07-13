@@ -20,6 +20,7 @@ main{
 }
 
 .informacoes{
+    line-height:35px;
     font-size:1.4rem;
     grid-area:informacoes;
 }
@@ -48,8 +49,10 @@ main img {
 }
 
 table,td,th{
+    border-collapse:collapse;
+    text-align:center;
     width:250px;
-    padding: 6px;
+    padding: 8px;
     border:1px solid black!important;
 }
 th{
