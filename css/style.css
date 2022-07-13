@@ -102,16 +102,16 @@ nav a:hover, nav p:hover {
 
 main {
     min-height: 70vh;
-    padding: 0 5vw 30px 5vw;
     background-color: antiquewhite;
+    padding-bottom: 50px;
 }
 
 main  * {
     font-family: 'Roboto', sans-serif;
 }
 
-main > h1 {
-    padding-top: 25px;
+main h1 {
+    padding: 25px 25px 0 25px;
     font-size: 51px;
 }
 
