@@ -7,8 +7,6 @@
     <link rel="stylesheet" type="text/css" href="../css/nossaslojas.css">
     <link rel="shortcut icon" href="../imagens/logo.png"/>
     <title>Star</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -63,32 +61,33 @@
     </nav>
 
     <main>
-        <div class="container">
+        <h1>Nossas lojas 🏬</h1>
+       
         <div id="lojas">
-            <h1 id="nossaslojas">Nossas lojas 🏬</h1>
-
             <form> 
-                <input type="search" class="form-control" name="procurar" placeholder="DIGITE SEU CEP">              
-            <h3 class="form">ou</h3>     
-                <select class="form-select" name="estado">
-                    <option disabled selected hidden>ESTADO</option>
-            
-                    <option>Rio Grande do Sul</option>
-            
-                    <option>:(</option>
-                </select>      
+                <input type="search" name="procurar" placeholder="DIGITE SEU CEP">
+
+                <h3>ou</h3>
+
+                <div>
+                    <select name="estado">
+                        <option disabled selected hidden>ESTADO</option>
                 
-                <select class="form-select" name="cidade">
-                    <option disabled selected hidden>CIDADE</option>
-            
-                    <option>Rio Grande</option>
-            
-                    <option>>:(</option>
-                </select>
-                   
+                        <option>Rio Grande do Sul</option>
+                
+                        <option>Nada</option>
+                    </select>      
+                    
+                    <select name="cidade">
+                        <option disabled selected hidden>CIDADE</option>
+                
+                        <option>Rio Grande</option>
+                
+                        <option>Pelotas</option>
+                    </select>
+                </div>
             </form>
         </div>
-    </div>
     </main>
 
     <footer>
