@@ -14,7 +14,8 @@ label, .preco {
     font-weight: bold;
 }
 input{
-    height:22px;
+    font-size:1rem;
+    height:25px;
     width: 44%;
     border: 1px solid black;
 }
@@ -49,7 +50,7 @@ main{
 
 @media (min-width: 650px){
     main{
-        align-content:space-evenly;
+        align-content:space-around;
         justify-items:start;
         text-align:start;
         grid-template-columns: 1.4fr 1fr;
