@@ -14,8 +14,9 @@ label, .preco {
     font-weight: bold;
 }
 input{
+    border-radius:3px;
     font-size:1rem;
-    height:25px;
+    height:26px;
     width: 44%;
     border: 1px solid black;
 }
